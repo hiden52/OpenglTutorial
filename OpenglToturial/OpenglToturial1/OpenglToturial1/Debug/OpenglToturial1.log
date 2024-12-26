@@ -1,0 +1,15 @@
+﻿  source.cpp
+C:\Users\Administrator\Desktop\OpenglTutorial\include\GLFW\glfw3.h(3235,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+source.obj : error LNK2019: __imp__glBegin@4_main 함수에서 참조되는 확인할 수 없는 외부 기호
+source.obj : error LNK2019: __imp__glClear@4_main 함수에서 참조되는 확인할 수 없는 외부 기호
+source.obj : error LNK2019: __imp__glColor3f@12_main 함수에서 참조되는 확인할 수 없는 외부 기호
+source.obj : error LNK2019: __imp__glEnd@0_main 함수에서 참조되는 확인할 수 없는 외부 기호
+source.obj : error LNK2019: __imp__glVertex2f@8_main 함수에서 참조되는 확인할 수 없는 외부 기호
+source.obj : error LNK2019: _glfwInit_main 함수에서 참조되는 확인할 수 없는 외부 기호
+source.obj : error LNK2019: _glfwTerminate_main 함수에서 참조되는 확인할 수 없는 외부 기호
+source.obj : error LNK2019: _glfwCreateWindow_main 함수에서 참조되는 확인할 수 없는 외부 기호
+source.obj : error LNK2019: _glfwWindowShouldClose_main 함수에서 참조되는 확인할 수 없는 외부 기호
+source.obj : error LNK2019: _glfwPollEvents_main 함수에서 참조되는 확인할 수 없는 외부 기호
+source.obj : error LNK2019: _glfwMakeContextCurrent_main 함수에서 참조되는 확인할 수 없는 외부 기호
+source.obj : error LNK2019: _glfwSwapBuffers_main 함수에서 참조되는 확인할 수 없는 외부 기호
+C:\Users\Administrator\Desktop\OpenglTutorial\OpenglToturial\OpenglToturial1\Debug\OpenglToturial1.exe : fatal error LNK1120: 12개의 확인할 수 없는 외부 참조입니다.
