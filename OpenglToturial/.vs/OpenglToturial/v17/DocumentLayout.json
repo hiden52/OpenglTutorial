@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{9E663887-B504-4703-95F1-93AD2D5DB461}|OpenglToturial1\\OpenglToturial1.vcxproj|C:\\Users\\Administrator\\Desktop\\OpenglTutorial\\OpenglToturial\\OpenglToturial1\\source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9E663887-B504-4703-95F1-93AD2D5DB461}|OpenglToturial1\\OpenglToturial1.vcxproj|solutionrelative:OpenglToturial1\\source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E663887-B504-4703-95F1-93AD2D5DB461}|OpenglToturial1\\OpenglToturial1.vcxproj|C:\\USERS\\ADMINISTRATOR\\DESKTOP\\OPENGLTUTORIAL\\OPENGLTOTURIAL\\INCLUDE\\GLEW\\GLEW.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9E663887-B504-4703-95F1-93AD2D5DB461}|OpenglToturial1\\OpenglToturial1.vcxproj|solutionrelative:INCLUDE\\GLEW\\GLEW.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,13 +50,26 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "glew.h",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\OpenglTutorial\\OpenglToturial\\include\\GLEW\\glew.h",
+              "RelativeDocumentMoniker": "include\\GLEW\\glew.h",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\OpenglTutorial\\OpenglToturial\\include\\GLEW\\glew.h",
+              "RelativeToolTip": "include\\GLEW\\glew.h",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAEQAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-06T04:38:55.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "source.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\OpenglTutorial\\OpenglToturial\\OpenglToturial1\\source.cpp",
               "RelativeDocumentMoniker": "OpenglToturial1\\source.cpp",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\OpenglTutorial\\OpenglToturial\\OpenglToturial1\\source.cpp",
               "RelativeToolTip": "OpenglToturial1\\source.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-26T06:13:52.836Z",
               "EditorCaption": ""
