@@ -1,50 +1,58 @@
+#include <iostream>
 #include <GLEW/glew.h>
 #include <GLFW/glfw3.h>
 
+// Window dimensions
+const GLint WIDTH = 800, HEIGHT = 600;
+
 int main(void)
 {
-    GLFWwindow* window;
-
-    /* Initialize the library */
+    // GLFW 초기화
     if (!glfwInit())
-        return -1;
-
-    /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
-    if (!window)
     {
+        std::cout << "GLFW 초기화 실패";
         glfwTerminate();
-        return -1;
+        return 1;
     }
 
-    /* Make the window's context current */
-    glfwMakeContextCurrent(window);
+    // GLFW 윈도우 속성 설정
+    // Opengl버전
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    // Core profile = No Backwards Compatibility
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    // Allow forward compatibility
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 
-    glClearColor(0, 0, 0, 1);
-
-    /* Loop until the user closes the window */
-    while (!glfwWindowShouldClose(window))
+    GLFWwindow* mainWindow = glfwCreateWindow(WIDTH, HEIGHT, "Test Window", NULL, NULL);
+    if (!mainWindow)
     {
-        /* Render here */
-        glClear(GL_COLOR_BUFFER_BIT);
-
-        glViewport(0, 0, 640, 480);
-        glClear(GL_COLOR_BUFFER_BIT);
-
-        glColor3f(0.f, 1.f, 0.f);
-        glBegin(GL_TRIANGLES);
-        glVertex3f(0.5f, 0.f, 0.f);
-        glVertex3f(-0.5f, 0.f, 0.f);
-        glVertex3f(0.f, 1.f, 0.f);
-        glEnd();
-
-        /* Swap front and back buffers */
-        glfwSwapBuffers(window);
-
-        /* Poll for and process events */
-        glfwPollEvents();
+        std::cout << "GLFW 윈도우 생성 실패";
+        glfwTerminate();
+        return 1;
     }
 
-    glfwTerminate();
+    // Get buffer size information
+    int bufferWidth, bufferHeight;
+    glfwGetFramebufferSize(mainWindow, &bufferWidth, &bufferHeight);
+
+    // GLEW를 사용하기 위한 컨텍스트 지정
+    glfwMakeContextCurrent(mainWindow);
+
+    // Allow modern extension features
+    glewExperimental = GL_TRUE;
+
+    if (!glewInit())
+    {
+        std::cout << "GLEW 초기화 실패";
+        glfwDestroyWindow(mainWindow);
+        glfwTerminate();
+        return 1;
+    }
+     
+    // 뷰포트 사이즈 설정
+    glViewport(0, 0, bufferWidth, bufferHeight);
+
+    
     return 0;
 }
