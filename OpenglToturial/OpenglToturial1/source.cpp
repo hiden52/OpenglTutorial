@@ -60,11 +60,6 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 
-#pragma comment(lib, "OpenGL32.lib")
-#pragma comment(lib, "lib/glew32.lib")
-#pragma comment(lib, "lib/glfw3.lib")
-
-
 
 void window_resized(GLFWwindow* window, int width, int height);
 
